@@ -1,0 +1,52 @@
+{
+    "TargetGroups": [
+        {
+            "TargetGroupArn": "arn:aws:elasticloadbalancing:ap-southeast-1:423537160223:targetgroup/Bluetg01/e9be334e1e271352",
+            "TargetGroupName": "Bluetg01",
+            "Protocol": "HTTP",
+            "Port": 80,
+            "VpcId": "vpc-0dcbaaad297a3a813",
+            "HealthCheckProtocol": "HTTP",
+            "HealthCheckPort": "traffic-port",
+            "HealthCheckEnabled": true,
+            "HealthCheckIntervalSeconds": 30,
+            "HealthCheckTimeoutSeconds": 5,
+            "HealthyThresholdCount": 5,
+            "UnhealthyThresholdCount": 2,
+            "HealthCheckPath": "/",
+            "Matcher": {
+                "HttpCode": "200"
+            },
+            "LoadBalancerArns": [
+                "arn:aws:elasticloadbalancing:ap-southeast-1:423537160223:loadbalancer/app/bluealb/87949ba024645282"
+            ],
+            "TargetType": "instance",
+            "ProtocolVersion": "HTTP1",
+            "IpAddressType": "ipv4"
+        },
+        {
+            "TargetGroupArn": "arn:aws:elasticloadbalancing:ap-southeast-1:423537160223:targetgroup/Greentg01/9035b38edde12d44",
+            "TargetGroupName": "Greentg01",
+            "Protocol": "HTTP",
+            "Port": 80,
+            "VpcId": "vpc-0dcbaaad297a3a813",
+            "HealthCheckProtocol": "HTTP",
+            "HealthCheckPort": "traffic-port",
+            "HealthCheckEnabled": true,
+            "HealthCheckIntervalSeconds": 30,
+            "HealthCheckTimeoutSeconds": 5,
+            "HealthyThresholdCount": 5,
+            "UnhealthyThresholdCount": 2,
+            "HealthCheckPath": "/",
+            "Matcher": {
+                "HttpCode": "200"
+            },
+            "LoadBalancerArns": [
+                "arn:aws:elasticloadbalancing:ap-southeast-1:423537160223:loadbalancer/app/bluealb/87949ba024645282"
+            ],
+            "TargetType": "instance",
+            "ProtocolVersion": "HTTP1",
+            "IpAddressType": "ipv4"
+        }
+    ]
+}
