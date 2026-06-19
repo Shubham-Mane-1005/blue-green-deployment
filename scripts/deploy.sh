@@ -2,9 +2,11 @@
 
 SERVER=$1
 
-scp app/index.html ec2-user@$SERVER:/tmp/
+scp -i /var/lib/jenkins/.ssh/jenki_key.pem -o StrictHostKeyChecking=no file ec2-user@$SERVER:/path$SERVER:/tmp/
 
-ssh ec2-user@$SERVER << EOF
+ssh -i /var/lib/jenkins/.ssh/jenki_key.pem -o StrictHostKeyChecking=no ec2-user@$SERVER<< EOF
 sudo cp /tmp/index.html /var/www/html/index.html
 sudo systemctl restart httpd
 EOF
+
+
