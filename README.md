@@ -1,5 +1,6 @@
 # Blue Green Deployment using Jenkins & AWS
-Repository:https://github.com/Shubham-Mane-1005/blue-green-deployment
+
+[GitHub Repository](https://github.com/Shubham-Mane-1005/blue-green-deployment)
 
 ## Architecture
 Developer → GitHub → Jenkins Pipeline → AWS EC2 Blue/Green → Load Balancer
