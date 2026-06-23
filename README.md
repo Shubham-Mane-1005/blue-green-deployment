@@ -4,7 +4,6 @@
 
 ## Architecture
 Developer → GitHub → Jenkins Pipeline → AWS EC2 Blue/Green → Load Balancer
-C:\Users\sm729\Downloads\Blue-Green-Deployment.png
 
 ## Tools Used
 - AWS EC2
